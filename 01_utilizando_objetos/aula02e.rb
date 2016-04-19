@@ -7,4 +7,4 @@ puts t2
 t3=t2-t
 #como resolver a diferença de tempo ?
 #desafio valendo +0,5 ponto
-puts t3
+puts Time.at(t3)
