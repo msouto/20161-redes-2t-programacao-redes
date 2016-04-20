@@ -4,7 +4,7 @@ class Fracao
 
 def initialize(num,den)
 	@numerador=num
-	@denominador=den
+	self.denominador=den
 end
 
   def denominador=(den)
@@ -27,3 +27,7 @@ puts f.to_s
 puts "Alterando os valor da fração para 8/7"
 f1 = Fracao.new(8,7)
 puts f1.to_s
+
+puts "Alterando os valor da fração para 8/0"
+f2 = Fracao.new(8,0)
+puts f2.to_s
