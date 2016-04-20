@@ -14,9 +14,9 @@ end
   end
 
   def somar(f)
-  		n = @numerador*f.denominador+f.numerador*@denominador
-  		d = @denominador*f.denominador
-  		return Fracao.new(n,d)
+  	n = @numerador*f.denominador+f.numerador*@denominador
+  	d = @denominador*f.denominador
+  	return Fracao.new(n,d)
   end
 
   def to_s
