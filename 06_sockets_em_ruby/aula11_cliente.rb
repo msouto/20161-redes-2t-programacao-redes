@@ -15,3 +15,14 @@ for i in 1..5 do
 	end
 	threads << t #adiciona a thread ao array (vetor)
 end
+
+#avisa este programa para aguardar até que todas as threads 
+#tenham terminado sua execução
+
+threads.each do |t|
+	t.join
+end
+
+fim = Time.now
+#calcula e imprimir o tempo de execução
+puts "#{fim - inicio} s"
