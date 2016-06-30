@@ -2,11 +2,11 @@ require "socket"
 
 #monta a requisição HTTP
 request = "GET / HTTP/1.1\r\n"
-request += "Host: www.ifrn.edu.br\r\n"
+request += "Host: portal.ifrn.edu.br\r\n"
 request += "\r\n"
 
 #Abre o scoket e enviar a requisicao
-socket = TCPSocket.new('www.ifrn.edu.br', 80)
+socket = TCPSocket.new('portal.ifrn.edu.br', 80)
 socket.print(request)
 
 #lê e interpretar a resposta
