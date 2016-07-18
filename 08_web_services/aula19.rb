@@ -1,8 +1,8 @@
 require "net/http"
 
-http = Net::HTTP.new("localhost", 4567)
+http = Net::HTTP.new("localhost", 2000)
 
 #cadastrar usuário
-request = Net::HTTP::PUT.new("/usuario")
-request.body = "<?xml?><usuario nome='Ana' />"
+request = Net::HTTP::Put.new("/usuario")
+request.body = "<?xml?><usuario nome='Moises' />"
 response = http.request(request)

@@ -5,6 +5,8 @@ require "sinatra"
 require "rexml/document"
 include REXML
 
+set :port, 2000
+
 class Usuario
 	attr_accessor :nome, :links
 
